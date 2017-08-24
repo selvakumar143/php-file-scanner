@@ -12,10 +12,13 @@
 	$res=mysqli_query($con,$query);
 	while($row=$res->fetch_assoc())
 	{
-		print($row['id']);
+		$a=[];
+		$a['id']= array ($row['id']);
 		print($row['file_name']);
 		print('<br>');
+		//print_r($a);
 	}
+	print_r($a);
 	mysqli_close($con);
 	
 		
