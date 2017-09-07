@@ -14,7 +14,9 @@
 	{
 		print($row['id']);
 		print($row['file_name']);
+		print('<br>');
 	}
 	mysqli_close($con);
-			
+	
+		
 ?>
